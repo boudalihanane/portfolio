@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Your Name</a>
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1> Portfolio</h1>
+      <p class="sub">Selected works </p>
+    </section>
+
+    <section class="card">
+      <h2>Portfolio Flipbook</h2>
+      <p>Embedded viewer issu maybe.</p>
+
+      <!-- OPTION A: to embed issu maybe ) -->
+      <div class="embed">
+        <iframe
+          src="PASTE_YOUR_FLIPBOOK_EMBED_URL_HERE"
+          title="Portfolio flipbook"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- OPTION B: or linking pdf here -->
+      <!-- <p><a class="button" href="PASTE_LINK_HERE" target="_blank" rel="noopener">Open portfolio</a></p> -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Hanane </p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
